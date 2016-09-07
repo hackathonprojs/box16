@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>plaidtrialmaven</groupId>
+  <artifactId>plaidtrialmaven</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>	</description>
+  <dependencies>
+  	<dependency>
+	  <groupId>com.plaid</groupId>
+	  <artifactId>plaid-java</artifactId>
+	  <version>0.2.12</version>
+	</dependency>
+	
+	
+	<!-- compile scope dependencies -->
+	<dependency>
+		<groupId>org.apache.httpcomponents</groupId>
+		<artifactId>httpclient</artifactId>
+		<version>4.3.3</version>
+	</dependency>
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-core</artifactId>
+		<version>2.2.3</version>
+	</dependency>
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-annotations</artifactId>
+		<version>2.2.3</version>
+	</dependency>
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-databind</artifactId>
+		<version>2.2.3</version>
+	</dependency>
+	<dependency>
+		<groupId>com.fasterxml.jackson.datatype</groupId>
+		<artifactId>jackson-datatype-joda</artifactId>
+		<version>2.2.3</version>
+	</dependency>
+	<dependency>
+		<groupId>joda-time</groupId>
+		<artifactId>joda-time</artifactId>
+		<version>2.3</version>
+	</dependency>
+	<dependency>
+		<groupId>commons-lang</groupId>
+		<artifactId>commons-lang</artifactId>
+		<version>2.6</version>
+	</dependency>
+	
+	<!-- runtime scope dependencies -->
+	<dependency>
+		<groupId>ch.qos.logback</groupId>
+		<artifactId>logback-classic</artifactId>
+		<version>1.1.1</version>
+		<scope>runtime</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>log4j-over-slf4j</artifactId>
+		<version>1.7.6</version>
+		<scope>runtime</scope>
+	</dependency>
+
+	<!-- test scope dependencies -->
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.11</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>com.github.tomakehurst</groupId>
+		<artifactId>wiremock</artifactId>
+		<version>1.44</version>
+		<scope>test</scope>
+		<!-- Include this if you have dependency conflicts for Guava, Jetty, Jackson 
+			or Apache HTTP Client -->
+		<classifier>standalone</classifier>
+	</dependency>
+  </dependencies>
+</project>

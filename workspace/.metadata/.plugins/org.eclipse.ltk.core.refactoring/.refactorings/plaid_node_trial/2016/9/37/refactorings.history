@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;plaid_node_trial/views/plaidsimpleintegration.html&apos; to &apos;plaidsimpleintegration.ejs&apos;" description="Rename resource &apos;plaidsimpleintegration.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="views/plaidsimpleintegration.html" name="plaidsimpleintegration.ejs" stamp="1473203130633" updateReferences="true"/>
+</session>
